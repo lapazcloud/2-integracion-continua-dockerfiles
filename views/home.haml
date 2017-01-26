@@ -1,0 +1,14 @@
+%h1 Bolívar vs. The Strongest!
+%ul
+  %form{:action => "/", :method => "post"}
+    %li.tigre
+      %input#tigre{:type => "radio", :name => "equipo", :onclick => "this.form.submit();", :value => "tigre"}
+      %label{:for => "tigre"} The Strongest
+    %li.bolivar
+      %input#bolivar{:type => "radio", :name => "equipo", :onclick => "this.form.submit();", :value => "bolivar"}
+      %label{:for => "bolivar"} Bolívar
+    %input#votar{:type => "submit", :value => "Votar"}
+%h2 Resultados de la votación
+%ul
+  %li #{@votos_tigre} - The Strongest
+  %li #{@votos_bolivar} - Bolívar

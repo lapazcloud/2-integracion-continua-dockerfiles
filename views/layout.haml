@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %meta{:charset => 'utf8'}
+    %meta{:name => "viewport", :content => "width=device-width"}
+    %title Bolívar vs. The Strongest
+    %link{:href => '/estilos.css', :rel => 'stylesheet'}
+  %body
+    - if flash[:success]
+      %header= flash[:success]
+    #wrapper
+      = yield
+      %footer
+        %p
+          Procesado por el contenedor con ID
+          %br
+          = ENV['HOSTNAME']
