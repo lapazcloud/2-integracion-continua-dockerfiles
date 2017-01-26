@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    image: ruby:2.3
+    commands:
+      - bundle install
+      - ruby test.rb
+services:
+  redis:
+    image: redis:alpine
