@@ -7,10 +7,10 @@ pipeline:
   publish:
     image: plugins/docker
     debug: true
-    username: ${DRONE_USERNAME}
+    username: yamilurbina
     password: ${DRONE_PASSWORD}
-    email: ${DRONE_EMAIL}
-    repo: dockerlapaz/votacion-ruby
+    email: hello@yamilurbina.com
+    repo: dockerlapaz/votacion2
     tags: ${DRONE_BUILD_NUMBER}
 services:
   redis:
