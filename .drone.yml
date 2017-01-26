@@ -8,10 +8,10 @@ pipeline:
     image: plugins/docker
     debug: true
     username: yamilurbina
-    password: ${DRONE_PASSWORD}
+    password: "JJf-9Wy-6Mo-uRy"
     email: hello@yamilurbina.com
     repo: dockerlapaz/votacion2
-    tags: ${DRONE_BUILD_NUMBER}
+    tags: latest
 services:
   redis:
     image: redis:alpine
