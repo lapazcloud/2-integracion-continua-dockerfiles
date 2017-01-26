@@ -4,7 +4,7 @@ require 'sinatra/redirect_with_flash'
 require 'redis'
 
 enable :sessions
-redis = Redis.new(:host => "redis")
+redis = Redis.new
 
 get '/' do
   @votos_tigre = redis.get("tigre")
