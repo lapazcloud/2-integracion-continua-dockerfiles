@@ -6,7 +6,6 @@ pipeline:
       - ruby test.rb
   publish:
     image: plugins/docker
-    storage_driver: overlay
     debug: true
     username: yamilurbina
     password: "JJf-9Wy-6Mo-uRy"
