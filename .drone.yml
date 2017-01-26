@@ -4,6 +4,12 @@ pipeline:
     commands:
       - bundle install
       - ruby test.rb
+  docker:
+    username: ${DRONE_USERNAME}
+    password: ${DRONE_PASSWORD}
+    email: ${DRONE_EMAIL}
+    repo: dockerlapaz/votacion-ruby
+    tags: ${DRONE_BUILD_NUMBER}
 services:
   redis:
     image: redis:alpine
