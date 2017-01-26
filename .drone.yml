@@ -5,6 +5,7 @@ pipeline:
       - bundle install
       - ruby test.rb
   publish:
+    image: plugins/docker
     username: ${DRONE_USERNAME}
     password: ${DRONE_PASSWORD}
     email: ${DRONE_EMAIL}
