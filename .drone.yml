@@ -4,14 +4,14 @@ pipeline:
     commands:
       - bundle install
       - ruby test.rb
-  publish:
-    image: plugins/docker
-    debug: true
-    username: yamilurbina
-    password: "JJf-9Wy-6Mo-uRy"
-    email: hello@yamilurbina.com
-    repo: dockerlapaz/votacion2
-    tags: ${DRONE_JOB_NUMBER}
+  # publish:
+  #   image: plugins/docker
+  #   debug: true
+  #   username: yamilurbina
+  #   password: "JJf-9Wy-6Mo-uRy"
+  #   email: hello@yamilurbina.com
+  #   repo: dockerlapaz/votacion2
+  #   tags: ${DRONE_JOB_NUMBER}
 services:
   redis:
     image: redis:alpine
