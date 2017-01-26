@@ -6,6 +6,7 @@ pipeline:
       - ruby test.rb
   publish:
     image: plugins/docker
+    debug: true
     username: ${DRONE_USERNAME}
     password: ${DRONE_PASSWORD}
     email: ${DRONE_EMAIL}
