@@ -14,14 +14,14 @@ class VotactionTest < Test::Unit::TestCase
 
   def test_title
     visit '/'
-    assert page.has_content?("Bolívar vs. The Strongest")
+    assert page.has_content?("San Jose vs. The Strongest")
   end
 
   def test_tigre_vote
     visit '/'
     choose('tigre')
     click_button('Votar')
-    assert page.has_content?("Gracias por participar")
+    assert page.has_content?("Gracias.")
   end
 
   def test_bolivar_vote
